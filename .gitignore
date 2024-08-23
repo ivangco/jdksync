@@ -1,0 +1,4 @@
+# Directorio de jdks
+jdks/jdk**
+# Directorio auto generado para JAVA_HOME
+jdk
