@@ -5,7 +5,7 @@ param (
 
 # Comprobamos si se ha proporcionado un comando
 if (-not $command) {
-    Write-Host "No se ha proporcionado ningún comando."
+    Write-Host "No se ha proporcionado ningun comando."
     Write-Host "Uso: jdksync comando [opciones]"
     Write-Host "Use 'jdksync help' para ver los comandos disponibles."
     exit

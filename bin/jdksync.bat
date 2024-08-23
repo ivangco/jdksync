@@ -14,8 +14,9 @@ IF /I "%1"=="help" (
     IF "%2"=="" (
         echo Comandos disponibles:
         echo.
-        echo     help           Muestra esta ayuda.
+        echo     help          Muestra esta ayuda.
         echo     sync          syncronizar jdk 
+        echo     list          listar jdk 
         goto :eof
     )
     IF "%2"=="sync" ( 
@@ -40,6 +41,6 @@ IF /I "%1"=="sync" (
  
 REM Comando list
 IF /I "%1"=="list" (
-     for /d %%d in ("C:\jdksync\jdks\*") do echo %%d 
+     for /d %%d in ("C:\jdksync\jdks\**") do echo %%d 
 )
  
